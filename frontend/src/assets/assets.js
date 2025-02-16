@@ -97,6 +97,7 @@ import p_imgx from './p_imgx.webp'
 // import p_imgnn from './p_imgnn.avif'
 // import p_imgoo from './p_imgoo.avif'
 import p_imgpp from './p_imgpp.avif'
+import herobanner from './herobanner.jpg'
 
 
 
@@ -161,6 +162,7 @@ import cross_icon from './cross_icon.png'
 export const assets = {
     logo,
     mujlogo,
+    herobanner,
     hero_img,
     cart_icon,
     dropdown_icon,
