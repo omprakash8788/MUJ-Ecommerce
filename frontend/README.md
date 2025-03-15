@@ -46,3 +46,13 @@ const OutlookRuleAnimation = () => {
 };
 
 export default OutlookRuleAnimation;
+
+
+
+// props , childern , nested component , 
+
+<App value = {10}>
+<App value={12}>
+<Button>  | <Sidebar> | <Calling>
+<Google>  |  <Footer>  | <Cart>
+<App>
