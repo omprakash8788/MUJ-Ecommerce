@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
 import { assets } from "../assets/assets";
+import RelatedProduct from "../components/RelatedProduct";
 
 const Product = () => {
   const { productId } = useParams();
@@ -93,14 +94,16 @@ const Product = () => {
       {/* review section */}
       <div className="mt-20">
         <div className="flex">
-          <b className="border px-4 text-sm">Description</b>
-          <p className="border px-4 text-sm">Reviews (130)</p>
+          <b className="border px-4 py-3 text-sm">Description</b>
+          <p className="border px-4 py-3 text-sm">Reviews (130)</p>
         </div>
         <div className="flex flex-col gap-4 border px-6 py-6 text-sm text-gray-500">
          <p>An ecommerce website is  an online plateform that facilitates the buying and sealing products online.</p>
          <p>An ecommerce website is  an online plateform that facilitates the buying and sealing products online.</p>
         </div>
       </div>
+      {/* related product */}
+      <RelatedProduct category={productData.category} subCategory={productData.subCategory}/>
     </div>
   ) : (
     <div className="opacity-0"></div>
